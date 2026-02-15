@@ -45,7 +45,7 @@ export function PlaylistCard({ playlist }: PlaylistCardProps) {
           {playlist.name}
         </span>
         <span className="text-xs text-ctp-subtext0">
-          {playlist.tracks.total} tracks · {playlist.owner.display_name}
+          {playlist.tracks?.total ?? 0} tracks · {playlist.owner?.display_name}
         </span>
         <span className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-[#1DB954] opacity-0 transition-opacity group-hover:opacity-100">
           Open in Spotify
